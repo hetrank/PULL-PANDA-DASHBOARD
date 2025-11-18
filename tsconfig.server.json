@@ -4,7 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "outDir": "dist/server",
-    "rootDir": "server",
+    "rootDir": ".",
     "strict": false,
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -16,6 +16,6 @@
       "@shared/*": ["./shared/*"]
     }
   },
-  "include": ["server/**/*"],
+  "include": ["server/**/*", "shared/**/*"],
   "exclude": ["node_modules", "dist", "client", "client-dist"]
 }

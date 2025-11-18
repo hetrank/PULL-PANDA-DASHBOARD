@@ -53,3 +53,8 @@ export type Repository = z.infer<typeof repositorySchema>;
 export type PullRequest = z.infer<typeof pullRequestSchema>;
 export type ReviewComment = z.infer<typeof reviewCommentSchema>;
 export type GitHubUser = z.infer<typeof userSchema>;
+
+export type User = GitHubUser & { id: string };
+
+// InsertUser = GitHubUser without id
+export type InsertUser = Omit<User, "id">;
